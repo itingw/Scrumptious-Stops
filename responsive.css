@@ -1,0 +1,58 @@
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+  .options-box {
+    z-index: 10;
+    width: 300px;
+    position: absolute;
+    /* This transform moves the drawer off canvas. */
+    -webkit-transform: translate(-500px, 0);
+    transform: translate(-500px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.8s ease;
+  }
+
+  .options-box.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  #map {
+    width: 100%;
+    left: 0px;
+    /*z-index: -1;*/
+  }
+
+  .header__menu {
+    z-index: 999;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding: 1em;
+  }
+
+  .header__menu svg {
+    width: 32px;
+    fill:#955130;
+  }
+
+  div.tab button {
+      font-size: 12px;
+    }
+
+  h1#name {
+    font-size: 28px;
+  }
+
+  #logo {
+    width: 30px;
+  }
+
+  #title {
+    padding-left: 35px;
+  }
+
+}
