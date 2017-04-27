@@ -1,7 +1,7 @@
 
 ## **Scrumptious Stops**
 
-Bug Invasion is an arcade game where bugs are taking over the universe! The object of the game is to trek through different environments while avoiding the bugs.
+Scrumptious Stops is a trip planning - food guide in central Florida! Find recommended locations along your route or view the whole list!
 
 ### **Access Instructions**
 Access the site here: https://itingw.github.io/Scrumptious-Stops
