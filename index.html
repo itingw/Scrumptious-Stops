@@ -24,7 +24,7 @@
   <div class="container">
     <div class="options-box">
       <div id = "title">
-        <img src = "images/logo.svg" id = "logo">
+        <img src = "images/logo.svg" id = "logo" alt="Scrumptious Stops logo">
         <h1 id = "name">Scrumptious Stops</h1>
       </div>
       <div id = "intro">
@@ -38,9 +38,9 @@
 
       <div id= "yumlist" class="tabcontent">
 
-          <button id = "showAll" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter()}"><img src=images/nofilter.svg></button>
-          <button id = "showDining" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('dining')}"><img src=images/dining.svg></button>
-          <button id = "showCafe" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('cafe')}"><img src=images/cafe.svg></button>
+          <button id = "showAll" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter()}"><img src=images/nofilter.svg alt="no filters"></button>
+          <button id = "showDining" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('dining')}"><img src=images/dining.svg alt="dining"></button>
+          <button id = "showCafe" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('cafe')}"><img src=images/cafe.svg alt="cafes"></button>
 
       <div id = "listTable">
         <ul data-bind="foreach: filterList">
@@ -83,7 +83,7 @@
   <script src="js/initMap.js"></script>
   <script src="js/app.js"></script>
   <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuvlmNILFkUupCNaeM5j252uQRO1Ou4Aw&v=3&callback=initMap&libraries=places" type="text/javascript">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuvlmNILFkUupCNaeM5j252uQRO1Ou4Aw&v=3&callback=initMap&libraries=places" onerror= "googleError()" type="text/javascript">
   </script>
 
 

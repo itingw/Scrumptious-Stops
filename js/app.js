@@ -410,8 +410,12 @@ function populateInfoWindow(marker, infowindow) {
                                         alert("place not found");
                                     }
                                 });
-
+                            },
+                            error: function() {
+                              infowindow.marker = null;
+                              alert("place not found");
                             }
+
                         });
 
                     }

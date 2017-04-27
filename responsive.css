@@ -13,11 +13,13 @@
     transform: translate(-500px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.8s ease;
+    overflow: auto;
   }
 
   .options-box.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    overflow: auto;
   }
 
   #map {

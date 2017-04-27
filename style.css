@@ -125,6 +125,7 @@ div.tab button.active {
     padding: 20px 12px;
     border: 1px solid #482717;
     border-radius: 5px;
+    overflow: auto;
 }
 
 
@@ -165,6 +166,7 @@ button.filter.active {
 .listItem:hover {
   font-weight: bold;
   background-color: #C86D40;
+  cursor: pointer;
 }
 
 .listItem:focus {
@@ -228,7 +230,6 @@ img#foursquare{
   padding: 0;
   display: block;
   z-index: 0;
-  }
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -244,10 +245,6 @@ img#foursquare{
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #955130;
-}
-
-::placeholder {
-  color: #955130;
 }
 
 #home input[type=text] {

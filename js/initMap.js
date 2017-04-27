@@ -184,7 +184,7 @@ function initMap() {
     */
 
     //bind location data
-    var yumPlace = function(data) {
+    var YumPlace = function(data) {
         this.title = ko.observable(data.title);
         this.type = ko.observable(data.type);
         this.marker = ko.observable(data.marker);
@@ -197,7 +197,7 @@ function initMap() {
 
         //store locations array into yumList observable arrayFilter
         for (var i = 0; i < locations.length; i++) {
-            self.yumList.push(new yumPlace(locations[i]));
+            self.yumList.push(new YumPlace(locations[i]));
         }
 
         //store current filter
@@ -234,10 +234,14 @@ function initMap() {
 function filterMarkers(type) {
     hideListings();
     for (var i = 0; i < locations.length; i++) {
-        if (locations[i].type === type) {
+        if (locgations[i].type === type) {
             markers[i].setMap(map);
         } else {
             markers[i].setMap(null);
         }
     }
+}
+
+function googleError() {
+  alert("Google Maps Error!");
 }
