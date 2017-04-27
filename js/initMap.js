@@ -118,6 +118,7 @@ function initMap() {
         },
         zoom: 10,
         mapTypeControl: false,
+        streetViewControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles: styles
     });
@@ -222,6 +223,11 @@ function initMap() {
 
         self.selectListLocation = function(clicked) {
             google.maps.event.trigger(clicked.marker(), 'click');
+            activate(event, 'listItem');
+            if(window.matchMedia("max-width: 640px"))
+              {
+                document.querySelector('#menu').click();
+              }
         };
 
     };

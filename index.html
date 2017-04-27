@@ -38,9 +38,9 @@
 
       <div id= "yumlist" class="tabcontent">
 
-          <button id = "showAll" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter()}"><img src=images/nofilter.svg alt="no filters"></button>
-          <button id = "showDining" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('dining')}"><img src=images/dining.svg alt="dining"></button>
-          <button id = "showCafe" class = "filter" onclick="activate(event, 'filter')" data-bind = "click: function() {filter('cafe')}"><img src=images/cafe.svg alt="cafes"></button>
+          <button id = "showAll" class = "filter" data-bind = "click: function() {filter()}"><img src=images/nofilter.svg alt="no filters"></button>
+          <button id = "showDining" class = "filter" data-bind = "click: function() {filter('dining')}"><img src=images/dining.svg alt="dining"></button>
+          <button id = "showCafe" class = "filter" data-bind = "click: function() {filter('cafe')}"><img src=images/cafe.svg alt="cafes"></button>
 
       <div id = "listTable">
         <ul data-bind="foreach: filterList">
