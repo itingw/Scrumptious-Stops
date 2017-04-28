@@ -1,6 +1,5 @@
 //activates the tab to make it highlighted
 document.getElementById("defaultOpen").click();
-document.getElementById("showAll").click();
 
 //how to make tabs: https://www.w3schools.com/howto/howto_js_tabs.asp
 

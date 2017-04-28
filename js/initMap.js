@@ -240,7 +240,7 @@ function initMap() {
 function filterMarkers(type) {
     hideListings();
     for (var i = 0; i < locations.length; i++) {
-        if (locgations[i].type === type) {
+        if (locations[i].type === type) {
             markers[i].setMap(map);
         } else {
             markers[i].setMap(null);
